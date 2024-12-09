@@ -159,3 +159,30 @@ if(defined("DOG_NAME")){
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="submit">
+    <label>
+      <h4>User</h1>
+      <input type="text" placeholder="User">
+    </label>
+    <label>
+      <h4>Password</h1>
+      <input type="text" placeholder="******">
+    </label>
+    <input type="submit" value="Login"/>
+  </form>
+  <?php 
+    if(isset($_GET['nome'])){
+      echo $_GET["nome"];
+    }
+  ?>
+</body>
+</html>
+
